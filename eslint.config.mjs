@@ -3,7 +3,7 @@ import pluginJs from '@eslint/js';
 import googleConfig from 'eslint-config-google';
 
 export default [
-  {ignores: ['node_modules', 'mochawesome-report']},
+  {ignores: ['node_modules', 'mochawesome-report', 'coverage', '.nyc_output']},
   {files: ['**/*.js'], languageOptions: {sourceType: 'commonjs'}},
   {languageOptions: {globals: globals.browser}},
   pluginJs.configs.recommended,
